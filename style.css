@@ -1,0 +1,338 @@
+
+.Logo{ 
+    height: 50px; /* Adjust the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the logo */
+    top: 14px; /* Adjust the distance from the top */
+    left: 60px; 
+    border-radius: 50%;
+    
+}
+.About ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 40px
+}
+.About ul li{
+    margin-left: 50px;
+}
+.About ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    width: max-content;
+    position: relative; /* Add position relative for the underline */
+    transition: color 0.3s;
+}
+.About ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: -2px;
+    left: 50%; /* Set left position to 50% */
+    transform: translateX(-50%); /* Move the underline to center */
+    transition: width 0.3s, left 0.3s; /* Add transition effect for underline width and left position */
+}
+
+
+.About ul li a:hover::after {
+    width: 100%; /* Expand underline width on hover */
+}
+
+.Search{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px
+}
+.Typesearch{
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 6px;
+    border-width: 2px;
+    border: none;
+    margin-top: -23px;
+    background-color: rgba(138, 128, 128, 0.091);
+    
+}
+.body2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.ImageWallpaper{
+    height:70vh;
+
+}
+.box{
+    padding: 100px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Recommended{
+    padding: 100px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+.FiltersImg{
+    height: 15px;
+}
+.side1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.category{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.body3{
+    margin: 20px;
+    display: flex;
+}
+
+
+.ImageNike1{
+    height: 300px;
+    display: flex;
+}
+
+.Variant{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.price{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.Button{
+    width: 20px; 
+    height: 20px;
+}
+.ButtonRed{
+    width: 20px; 
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    border: none;
+}
+.ButtonBlue{
+    
+    width: 20px; 
+    height: 20px;
+    background-color: rgb(93, 93, 254);
+    border-radius: 50%;
+    border: none;
+}
+
+.ButtonPink{
+    
+    width: 20px; 
+    height: 20px;
+    background-color: rgb(93, 93, 254);
+    border-radius: 50%;
+    border: none;
+}
+.ButtonPink{
+    
+    width: 20px; 
+    height: 20px;
+    background-color: rgb(255, 54, 215);
+    border-radius: 50%;
+    border: none;
+}
+.ButtonGreen{
+    
+    width: 20px; 
+    height: 20px;
+    background-color: rgb(54, 255, 101);
+    border-radius: 50%;
+    border: none;
+
+}
+.ButtonYellow{
+    width: 20px; 
+    height: 20px;
+    background-color: rgb(245, 255, 54);
+    border-radius: 50%;
+    border: none;
+
+}
+.side3{
+    margin: 50px;
+}
+.side4{
+    gap: 20px;
+    padding: 30px;
+    margin-top: -30px;
+}
+
+.OneFooter{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+.Default{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.Footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+.OneFooter{
+    margin: 100px;
+    color: rgb(255, 255, 255);
+}
+.SecondFooter{
+    margin: 100px;
+    color: rgb(255, 255, 255);
+}
+.ThirdFooter{
+    margin: 100px;
+    color: rgb(255, 255, 255);
+}
+.SecondHeading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.ThirdHeadding{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.AllSocialMedia{
+    height: 50px;
+    margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .A{
+        display: flex;
+    }
+    .Typesearch{
+        display: none;
+    }
+    .body1 {
+        flex-direction: row;
+        align-items: row;
+    }
+    .Logo {
+        left: 20px; /* Adjust left position for smaller screens */
+    }
+    .About ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+    .About ul li {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+    .Search {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+    }
+    .body2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ImageWallpaper {
+        height: auto;
+        width: 100%;
+    }
+    .box {
+        padding: 20px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .Recommended {
+        padding: 20px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .body3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .side1 {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+        display: none;
+    }
+    .FiltersImg {
+        display: none; /* Hide filter image for smaller screens */
+    }
+    .Nike1 {
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+    .positioning {
+        text-align: center;
+    }
+    .OneFooter,
+    .SecondFooter,
+    .ThirdFooter {
+        margin: 100px 0; /* Adjust margin for smaller screens */
+        
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .Typesearch{
+        display: none;
+    }
+    .body1 {
+        justify-content: space-between;
+    }
+    .Search {
+        margin-right: 10px; /* Adjust margin for tablets */
+    }
+    .body2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ImageWallpaper {
+        height: auto;
+        width: 70%;
+    }
+    .box {
+        padding: 50px; /* Adjust padding for tablets */
+        font-size: 20px; /* Adjust font size for tablets */
+    }
+    .Recommended {
+        padding: 50px; /* Adjust padding for tablets */
+        font-size: 20px; /* Adjust font size for tablets */
+    }
+    .body3 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .side1 {
+        margin: 0;
+    }
+}
